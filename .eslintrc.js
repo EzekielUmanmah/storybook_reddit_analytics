@@ -2,24 +2,21 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    jest: true,
+    jest: true
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
+  extends: ["plugin:react/recommended", "airbnb", "plugin:storybook/recommended"],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 12,
-    sourceType: 'module',
+    sourceType: 'module'
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   rules: {
     'linebreak-style': 0,
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-  },
+    'react/jsx-filename-extension': [1, {
+      extensions: ['.js', '.jsx']
+    }]
+  }
 };
